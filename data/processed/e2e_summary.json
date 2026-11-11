@@ -1,0 +1,11 @@
+{
+  "status": "ALL_GATES_PASSED",
+  "execution_time_seconds": 1.05,
+  "phantom_ring_score": 94.0,
+  "phantom_ring_level": "CRITICAL",
+  "screening_latency_ms": 0.759,
+  "clean_onboarding_decision": "APPROVE",
+  "suspicious_onboarding_decision": "MANUAL_REVIEW",
+  "blockchain_verification": "VERIFIED",
+  "timestamp": "2026-11-11T14:27:19Z"
+}

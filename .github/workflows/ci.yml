@@ -69,3 +69,4 @@ jobs:
       - name: Compile and test smart contract
         working-directory: blockchain
         run: npx hardhat test
+

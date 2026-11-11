@@ -9,3 +9,4 @@ Vercel / Browser (React 18 + Cytoscape.js)
    ├── Neo4j Aura (Property Graph, NetworkX fallback in local mode)
    └── EVM Blockchain (PhantomAuditRegistry.sol, Hardhat in local mode / Sepolia in cloud mode)
 ```
+

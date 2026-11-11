@@ -47,3 +47,4 @@ This plan maps every numbered section (1–21) of `docs/PHANTOM_Project_Document
 - **Phase 7**: All 15 React/TypeScript pages, Cytoscape explorer, Virtualized/paginated tables, vitest smoke tests, screenshots.
 - **Phase 8**: `scripts/e2e_demo.py` and `make all` end-to-end validation.
 - **Phase 9**: Final audit loop (up to 3 rounds), `docs/COMPLETION_MATRIX.md`, leftover checks.
+

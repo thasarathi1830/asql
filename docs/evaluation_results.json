@@ -1,0 +1,135 @@
+{
+  "split": {
+    "total_accounts": 82218,
+    "train_accounts": 57552,
+    "test_accounts": 24666,
+    "seed": 42,
+    "train_ratio": 0.7,
+    "test_ratio": 0.3
+  },
+  "baseline_calibration": {
+    "model": "Single-Transaction Amount Threshold (Train calibrated)",
+    "selected_threshold": 500000.0,
+    "train_f1": 0.5645
+  },
+  "test_results": {
+    "injected_rings": {
+      "phantom_model": {
+        "threshold": 30.0,
+        "tp": 27,
+        "fp": 0,
+        "fn": 66,
+        "tn": 24573,
+        "precision": 1.0,
+        "recall": 0.2903,
+        "f1": 0.45,
+        "fpr": 0.0,
+        "pr_auc": 0.553,
+        "top_100_precision": 0.48,
+        "total_evaluated": 24666,
+        "positives_count": 93
+      },
+      "baseline_amount": {
+        "threshold": 500000.0,
+        "tp": 36,
+        "fp": 4349,
+        "fn": 57,
+        "tn": 20224,
+        "precision": 0.0082,
+        "recall": 0.3871,
+        "f1": 0.0161,
+        "fpr": 0.176983,
+        "pr_auc": 0.0107,
+        "top_100_precision": 0.02,
+        "total_evaluated": 24666,
+        "positives_count": 93
+      }
+    },
+    "paysim_real_fraud": {
+      "phantom_model": {
+        "threshold": 30.0,
+        "tp": 0,
+        "fp": 27,
+        "fn": 4829,
+        "tn": 19810,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "fpr": 0.001361,
+        "pr_auc": 0.5824,
+        "top_100_precision": 0.63,
+        "total_evaluated": 24666,
+        "positives_count": 4829
+      },
+      "baseline_amount": {
+        "threshold": 500000.0,
+        "tp": 2581,
+        "fp": 1804,
+        "fn": 2248,
+        "tn": 18033,
+        "precision": 0.5886,
+        "recall": 0.5345,
+        "f1": 0.5602,
+        "fpr": 0.090941,
+        "pr_auc": 0.562,
+        "top_100_precision": 0.77,
+        "total_evaluated": 24666,
+        "positives_count": 4829
+      }
+    },
+    "combined_overall": {
+      "phantom_model": {
+        "threshold": 30.0,
+        "tp": 27,
+        "fp": 0,
+        "fn": 4839,
+        "tn": 19800,
+        "precision": 1.0,
+        "recall": 0.0055,
+        "f1": 0.011,
+        "fpr": 0.0,
+        "pr_auc": 0.6407,
+        "top_100_precision": 1.0,
+        "total_evaluated": 24666,
+        "positives_count": 4866
+      },
+      "baseline_amount": {
+        "threshold": 500000.0,
+        "tp": 2586,
+        "fp": 1799,
+        "fn": 2280,
+        "tn": 18001,
+        "precision": 0.5897,
+        "recall": 0.5314,
+        "f1": 0.5591,
+        "fpr": 0.090859,
+        "pr_auc": 0.5651,
+        "top_100_precision": 0.78,
+        "total_evaluated": 24666,
+        "positives_count": 4866
+      }
+    }
+  },
+  "rule_analysis": {
+    "RULE_001": {
+      "total_triggered": 101,
+      "avg_score": 24.0
+    },
+    "RULE_002": {
+      "total_triggered": 74,
+      "avg_score": 20.0
+    },
+    "RULE_005": {
+      "total_triggered": 416,
+      "avg_score": 7.5360576923076925
+    },
+    "RULE_006": {
+      "total_triggered": 2417,
+      "avg_score": 15.0
+    },
+    "RULE_008": {
+      "total_triggered": 1091,
+      "avg_score": 5.0
+    }
+  }
+}

@@ -5,7 +5,7 @@ import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from .routers import analytics, health
+from .routers import analytics, health, screening
 
 app = FastAPI(
     title="PHANTOM Analytics Engine",
@@ -29,6 +29,7 @@ app.add_middleware(
 
 app.include_router(health.router)
 app.include_router(analytics.router)
+app.include_router(screening.router)
 
 
 if __name__ == "__main__":

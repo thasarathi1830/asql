@@ -34,3 +34,4 @@ Per project source-of-truth rules: *the project documentation wins for structure
 - **Graph Store**: In-memory NetworkX `DiGraph` in `local` mode; Neo4j Aura Bolt driver in `cloud` mode.
 - **Blockchain**: Local Hardhat EVM node (`http://127.0.0.1:8545`) or deterministic local EVM test runner in `local` mode; Sepolia testnet in `cloud` mode.
 - **Frontend**: `demoData.ts` generated directly from processed PaySim outputs + Operation Phantom Ring in `local` / demo mode; live Supabase + FastAPI in `cloud` mode.
+

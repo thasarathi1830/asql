@@ -82,3 +82,4 @@ npx hardhat run scripts/deploy.ts --network sepolia
    - `VITE_SUPABASE_PUBLISHABLE_KEY`
    - `VITE_ANALYTICS_API_URL`
    - `VITE_ENABLE_DEMO_MODE=false` (or `true` for public demo)
+

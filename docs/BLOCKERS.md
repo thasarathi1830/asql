@@ -15,3 +15,4 @@ The only items unavailable in this local execution environment are external mana
    - **Fallback Active**: Blockchain anchoring and tamper detection run against the local Hardhat EVM network (`npx hardhat test` and local Hardhat EVM script).
 4. **PaySim Dataset Status**:
    - **Resolved**: The real 6,362,620-row PaySim dataset (`PS_20174392719_1491204439457_log.csv`, 493.5 MB) was found in `archive/` and copied to `data/raw/PS_20174392719_1491204439457_log.csv`. All data and evaluation runs use the real PaySim dataset.
+

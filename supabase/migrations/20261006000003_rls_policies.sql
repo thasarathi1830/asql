@@ -151,3 +151,4 @@ CREATE POLICY "Auditors read system_events" ON system_events FOR SELECT TO authe
     USING (public.get_user_role() IN ('ADMIN', 'INVESTIGATOR', 'ANALYST'));
 CREATE POLICY "Admins insert system_events" ON system_events FOR INSERT TO authenticated
     WITH CHECK (public.get_user_role() IN ('ADMIN', 'INVESTIGATOR'));
+

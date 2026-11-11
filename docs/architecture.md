@@ -53,3 +53,4 @@
 2. **Python FastAPI Microservice**: Johnson elementary cycles (`simple_cycles`), Brandes betweenness centrality, PageRank, greedy modularity communities, Pandas mule & dormant engines, 8-factor additive risk scoring `[0, 100]`.
 3. **Zero-PII EVM Audit Registry (`PhantomAuditRegistry.sol`)**: Deterministic canonical JSON serialization -> SHA-256 (`bytes32`) -> immutable on-chain commitment.
 4. **React 18 + Cytoscape.js Command Center**: 15 intelligence pages supporting 2,000-node subgraph rendering, cycle highlighting, hardware collision edges, and interactive tamper testing.
+

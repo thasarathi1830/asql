@@ -123,3 +123,4 @@ def test_adapter_no_balance_columns_used(tmp_path: Path) -> None:
     # Every transaction has a deterministic 0x-prefixed SHA-256 hash
     assert tx_df["blockchain_hash"].str.startswith("0x").all()
     assert (tx_df["blockchain_hash"].str.len() == 66).all()
+

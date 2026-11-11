@@ -147,20 +147,23 @@ def generate_demo_ts(
 
     # Alerts
     demo_alerts = []
-    if alerts_path.exists():
-        al_df = pd.read_csv(alerts_path, keep_default_na=False).head(25)
-        for _, r in al_df.iterrows():
-            demo_alerts.append({
-                "id": str(r["id"]),
-                "entity_type": str(r["entity_type"]),
-                "entity_id": str(r["entity_id"]),
-                "alert_type": str(r["alert_type"]),
-                "severity": str(r["severity"]),
-                "title": str(r["title"]),
-                "description": str(r["description"]),
-                "status": str(r["status"]),
-                "created_at": str(r["created_at"]),
-            })
+    if alerts_path.exists() and alerts_path.stat().st_size > 10:
+        try:
+            al_df = pd.read_csv(alerts_path, keep_default_na=False).head(25)
+            for _, r in al_df.iterrows():
+                demo_alerts.append({
+                    "id": str(r["id"]),
+                    "entity_type": str(r["entity_type"]),
+                    "entity_id": str(r["entity_id"]),
+                    "alert_type": str(r["alert_type"]),
+                    "severity": str(r["severity"]),
+                    "title": str(r["title"]),
+                    "description": str(r["description"]),
+                    "status": str(r["status"]),
+                    "created_at": str(r["created_at"]),
+                })
+        except Exception:
+            pass
     if not demo_alerts:
         demo_alerts.append({
             "id": "66666666-6666-4666-8666-000000000001",
@@ -327,3 +330,4 @@ def generate_demo_ts(
 
 if __name__ == "__main__":
     generate_demo_ts()
+

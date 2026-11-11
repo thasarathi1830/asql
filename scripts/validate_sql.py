@@ -77,10 +77,13 @@ def validate_all() -> None:
     assert not missing_rls, f"Missing RLS on tables: {missing_rls}"
 
     # 5. Parse all files with sqlglot (PostgreSQL dialect)
+    onb_sql = (mig_dir / "20261006000004_onboarding_and_screening.sql").read_text(encoding="utf-8")
+
     for label, text in [
         ("initial_schema.sql", init_sql),
         ("advanced_analytics.sql", adv_sql),
         ("rls_policies.sql", rls_sql),
+        ("onboarding_and_screening.sql", onb_sql),
         ("seed.sql", seed_sql),
         ("database/schema.sql", db_schema),
     ]:
@@ -114,3 +117,4 @@ def validate_all() -> None:
 
 if __name__ == "__main__":
     validate_all()
+

@@ -37,3 +37,4 @@ To process all 6.36M rows safely on a laptop without loading the CSV into RAM, `
 | Operation Phantom Ring (`C001–C003`, `ACC-0001-9041`, etc.) | Pre-seeded Case Study | `PHANTOM_RING_SEED` | Exact documentation Section 16 case study |
 
 All ground-truth labels in `data/processed/ground_truth.csv` carry `source ∈ {PAYSIM, INJECTED}` so `analytics/evaluation/evaluate.py` reports real PaySim performance separately from injected patterns.
+
