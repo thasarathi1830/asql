@@ -1,0 +1,23 @@
+{
+  "input_file": "C:\\Users\\vsada\\OneDrive\\Desktop\\asql\\data\\raw\\PS_20174392719_1491204439457_log.csv",
+  "seed": 42,
+  "target_transactions": 70000,
+  "total_raw_rows_scanned": 6362620,
+  "raw_fraud_rows": 8213,
+  "retained_fraud_rows": 8213,
+  "fraud_retention_rate": 1.0,
+  "retained_fraud_neighbor_rows": 57481,
+  "retained_stratified_normal_rows": 4186,
+  "injected_ring_transactions": 98,
+  "phantom_ring_transactions": 3,
+  "final_counts": {
+    "customers": 46408,
+    "accounts": 82218,
+    "transactions": 69981,
+    "identity_attributes": 92816,
+    "account_relationships": 427,
+    "ground_truth": 16660
+  },
+  "balance_columns_used": false,
+  "simulation_start_utc": "2026-06-01T00:00:00+00:00"
+}

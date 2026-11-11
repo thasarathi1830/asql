@@ -1,0 +1,22 @@
+{
+  "name": "phantom-audit-registry",
+  "version": "1.0.0",
+  "description": "PHANTOM Audit Registry - Blockchain layer for immutable audit records",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.ts"
+  },
+  "devDependencies": {
+    "hardhat": "^2.22.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "ethers": "^6.11.0",
+    "typescript": "^5.3.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^20.11.0",
+    "@types/mocha": "^10.0.0",
+    "chai": "^4.4.0",
+    "dotenv": "^16.4.0"
+  }
+}

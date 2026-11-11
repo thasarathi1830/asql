@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data (large files)
+archive/
+data/*.db
+data/raw/*.csv
+data/processed/*.csv
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Build artifacts
+frontend/dist/
+analytics/.pytest_cache/
+.pytest_cache/
+coverage/
+htmlcov/
+*.coverage
+
+# Blockchain
+blockchain/artifacts/
+blockchain/cache/
+blockchain/typechain-types/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Hardhat
+blockchain/deployments/
+
